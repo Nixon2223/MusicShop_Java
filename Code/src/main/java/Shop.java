@@ -17,4 +17,8 @@ public class Shop {
     public void removeStock(ISell item){
         stock.remove(item);
     }
+
+    public int countStock(){
+        return stock.size();
+    }
 }
