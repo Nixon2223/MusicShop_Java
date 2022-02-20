@@ -8,10 +8,10 @@ public abstract class Instrument implements ISell, IPlay {
     protected String type;
     protected String colour;
     protected String material;
-    protected int buyPrice;
-    protected int sellPrice;
+    protected double buyPrice;
+    protected double sellPrice;
 
-    public Instrument(String type, String colour, String material, int buyPrice, int sellPrice) {
+    public Instrument(String type, String colour, String material, double buyPrice, double sellPrice) {
         this.type = type;
         this.colour = colour;
         this.material = material;
@@ -19,7 +19,7 @@ public abstract class Instrument implements ISell, IPlay {
         this.sellPrice = sellPrice;
     }
 
-    public int calculateMarkup() {
+    public double calculateMarkup() {
         return ((sellPrice - buyPrice) / buyPrice) * 100 ;
     }
 }
