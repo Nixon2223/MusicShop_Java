@@ -1,4 +1,4 @@
-package Behaviors;
+package behaviors;
 
 public interface ISell {
 

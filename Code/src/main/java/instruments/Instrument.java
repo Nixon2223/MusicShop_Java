@@ -1,5 +1,7 @@
-import Behaviors.IPlay;
-import Behaviors.ISell;
+package instruments;
+
+import behaviors.IPlay;
+import behaviors.ISell;
 
 public abstract class Instrument implements ISell, IPlay {
 
