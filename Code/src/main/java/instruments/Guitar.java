@@ -3,15 +3,15 @@ package instruments;
 public class Guitar extends Instrument{
 
 
-    public Guitar(String type, String colour, String material, String buyPrice, String sellPrice) {
+    public Guitar(String type, String colour, String material, int buyPrice, int sellPrice) {
         super(type, colour, material, buyPrice, sellPrice);
     }
 
     public String play() {
-        return null;
+        return "strum strum";
     }
-    
+
     public int calculateMarkup() {
-        return 0;
+        return ((sellPrice - buyPrice) / buyPrice) * 100 ;
     }
 }
