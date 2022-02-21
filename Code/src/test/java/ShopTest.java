@@ -21,7 +21,7 @@ public class ShopTest {
 
     @Test
     public void canReturnStockMarkup(){
-        assertEquals(50.00, guitar.calculateMarkup(), 0.00);
+        assertEquals(25.00, guitar.calculateMarkup(), 0.00);
     }
 
     @Test
