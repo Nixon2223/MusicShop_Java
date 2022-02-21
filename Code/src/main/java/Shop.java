@@ -21,4 +21,12 @@ public class Shop {
     public int countStock(){
         return stock.size();
     }
+
+    public double totalPotentialProfit(){
+        int result = 0;
+        for (ISell item: stock){
+            result += item.calculateMarkup();
+        }
+        return result;
+    }
 }
