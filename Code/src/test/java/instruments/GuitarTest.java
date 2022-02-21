@@ -3,6 +3,8 @@ package instruments;
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class GuitarTest {
 
     Guitar guitar;
@@ -14,6 +16,6 @@ public class GuitarTest {
 
     @Test
     public void hasType(){
-        assert
+        assertEquals("String", guitar.getType());
     }
 }
