@@ -29,4 +29,12 @@ public class ShopTest {
         shop.addStock(guitar);
         assertEquals(1, shop.countStock());
     }
+
+    @Test
+    public void canRemoveStock(){
+        shop.addStock(guitar);
+        assertEquals(1, shop.countStock());
+        shop.removeStock(guitar);
+        assertEquals(0, shop.countStock());
+    }
 }
