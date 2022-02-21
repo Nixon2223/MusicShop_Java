@@ -18,4 +18,9 @@ public class GuitarTest {
     public void hasType(){
         assertEquals("String", guitar.getType());
     }
+
+    @Test
+    public void canPlay(){
+        assertEquals("strum, strum", guitar.play());
+    }
 }
